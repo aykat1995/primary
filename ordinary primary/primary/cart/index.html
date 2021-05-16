@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Awesome/css/font-awesome.min.css">
+  <title>Заявка на картриджи</title>
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Заявки на картриджи</h2>
+    <form class="form" method="post" action="main2.php">
+      <div class="form-box">
+        <div class="form__item">
+          <label class="form__label">Введите ФИО:</label>
+          <input class="form__input" type="text" name="name" required>      
+        </div>
+        <div class="form__item">
+          <label class="form__label">Введите кабинет:</label>
+          <input class="form__input" type="text" name="cabinet" required>      
+        </div>
+        <div class="form__item">
+          <label class="form__label">Выберите модель своего принтера:</label>
+          <select class="form__input" type="text" name="cartridge" required>     
+			<option selected disabled></option>		  
+            <option value="CE285A">HP LJ P1102</option>
+            <option value="CE285A">Canon MF3010</option>
+            <option value="BS-TN2375">Brother</option>
+            <option value="Xerox">Xerox 2335</option>
+            <option value="CF230">HP М203dn</option>     
+            <option value="Q2612A">HP LJ 1020</option>
+            <option value="CE285A">HP LJ M1212nf</option>
+            <option value="CE285A">HP LJ P1102</option>
+            <option value="TH280A/505A">HP LJ 400</option>
+            <option value="TS105L">Samsung SCX-4623F</option>      
+            <option value="CE285A">HP LJ 1606dn</option> 
+          </select>
+        </div>
+
+        <div class="form__item">
+          <label class="form__label"><input type="radio" class="deliv-input" name="delivery" value="self" checked>Заберем сами</label></br>
+          <label class="form__label"><input type="radio" class="deliv-input" name="delivery" value="deliv">Доставить картридж</label>
+          
+        </div>
+
+
+        <button class="submit-btn btn" type="submit">Отправить</button>
+        <input type="hidden" name="act" value="order">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

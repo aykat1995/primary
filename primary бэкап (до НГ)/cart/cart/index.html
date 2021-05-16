@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Awesome/css/font-awesome.min.css">
+  <title>Заявка на картриджи</title>
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Заявки на картриджи</h2>
+    <form class="form" method="post" action="main2.php">
+      <div class="form-box">
+        <div class="form__item">
+          <label class="form__label">Введите ФИО:</label>
+          <input class="form__input" type="text" name="name" required>      
+        </div>
+        <div class="form__item">
+          <label class="form__label">Введите кабинет:</label>
+          <input class="form__input" type="text" name="cabinet" required>      
+        </div>
+        <div class="form__item">
+          <label class="form__label">Выберите тип картриджа:</label>
+          <select class="form__input" type="text" name="cartridge" required>     
+			<option selected disabled></option>		  
+            <option value="basic">CE285</option>
+            <option value="brother">Brother</option>
+            <option value="xerox">Xerox 2335</option>
+            <option value="1020">1020</option>
+          </select>
+        </div>
+
+        <div class="form__item">
+          <label class="form__label"><input type="radio" class="deliv-input" name="delivery" value="self" checked>Заберем сами</label></br>
+          <label class="form__label"><input type="radio" class="deliv-input" name="delivery" value="deliv">Доставить картридж</label>
+          
+        </div>
+
+
+        <button class="submit-btn btn" type="submit">Отправить</button>
+        <input type="hidden" name="act" value="order">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

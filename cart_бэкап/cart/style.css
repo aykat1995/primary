@@ -1,0 +1,133 @@
+* {box-sizing: border-box;}
+body {background: #A0BFA8;}
+.form-box {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto 0;
+  background: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 40px 30px;
+}
+.form__label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+.form__item {
+  margin-bottom: 30px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #E9EFF6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 10px;
+  min-height: 45px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #fff;
+}
+
+.box-title {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #ff5c5a;
+}
+
+.box-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box-link {
+  text-decoration: none;
+  padding: 10px 5px;
+  background-color: #ff5c5a;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  display: block;
+  margin: 40px auto 0;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  max-width: 80%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.deliv-input {
+	margin-bottom: 15px;
+}
+
+.box-link:hover {
+  opacity: 0.9;
+}
+
+.submit-btn {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 45px; 
+  min-width: 200px;
+  border: none; 
+  border-radius: 35px;  
+  padding-right: 30px;
+  background: #ff5c5a;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.submit-btn:last-of-type {margin-right: 0;}
+.submit-btn:after {
+  position: absolute; 
+  right: 10px; 
+  top: 0;
+  width: 45px;
+  height: 45px; 
+  line-height: 45px; 
+  content: "\f1d8";
+  font-family: FontAwesome;
+  background: #ff5c5a; 
+  border-radius: 40%; 
+  color: white; 
+  font-size: 22px;   
+}
+@keyframes float {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-6px);}
+}
+.submit-btn:hover:after {animation: float 2s linear infinite;}
